@@ -1,0 +1,27 @@
+﻿@model TheMaxieInn.ViewModels.DogReservationViewModel
+
+@{
+    ViewData["Title"] = "Create a Reservation";
+}
+
+<h3 class="text-center">Make Your Reservation Today!</h3>
+<br />
+
+<h5>Select your reservation dates:</h5>
+
+<form asp-action="CreateReservation" method="post">
+
+    <div>
+        <label asp-for="CheckInDate"></label>
+        <input asp-for="CheckInDate" type="date" class="form-control" value="@Model.CheckInDate.ToString("yyyy-MM-dd")" required />
+        <span asp-validation-for="CheckInDate" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="CheckOutDate"></label>
+        <input asp-for="CheckOutDate" type="date" value="@Model.CheckOutDate.ToString("yyyy-MM-dd")" class="form-control" />
+        <span asp-validation-for="CheckOutDate" class="text-danger"></span>
+    </div><br />
+
+    <button type="submit">Next</button>
+
+</form>

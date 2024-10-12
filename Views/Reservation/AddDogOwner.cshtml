@@ -1,0 +1,58 @@
+﻿@model TheMaxieInn.ViewModels.DogOwnerViewModel
+
+@{
+    ViewData["Title"] = "Dog Owner's Information";
+    var reservationId = ViewBag.ReservationId;    
+}
+
+<h3 class="text-center">Enter your personal information:</h3>
+
+
+<form asp-action="AddDogOwner" method="post">
+    <input type="hidden" name="reservationId" value="@reservationId" />
+
+    <div>
+        <label asp-for="OwnerName"></label>
+        <input asp-for="OwnerName" type="text" class="form-control" required />
+        <span asp-validation-for="OwnerName"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="Address"></label>
+        <input asp-for="Address" type="text" class="form-control" required />
+        <span asp-validation-for="Address"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="City"></label>
+        <input asp-for="City" type="text" class="form-control" required />
+        <span asp-validation-for="City"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="State"></label>
+        <input asp-for="State" type="text" class="form-control" required />
+        <span asp-validation-for="State"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="ZipCode"></label>
+        <input asp-for="ZipCode" type="text" class="form-control" required />
+        <span asp-validation-for="ZipCode"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" type="text" class="form-control" required />
+        <span asp-validation-for="Email"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" type="text" class="form-control" required />
+        <span asp-validation-for="PhoneNumber"></span><br />
+    </div>
+
+    <button type="submit">Next</button><br />
+
+</form>

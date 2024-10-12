@@ -1,0 +1,66 @@
+﻿@model TheMaxieInn.ViewModels.DogInformationViewModel
+
+@{
+    ViewData["Title"] = "Add Dog Information";
+    var reservationId = ViewBag.ReservationId;
+}
+
+<h3 class="text-center">Add your dog's information:</h3>
+
+
+<form asp-action="AddDogInformation" method="post">    
+    <input type="hidden" name="reservationId" value="@reservationId" />
+
+    <div>
+        <label asp-for="DogName"></label>
+        <input asp-for="DogName" type="text" class="form-control" required />
+        <span asp-validation-for="DogName"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="Breed"></label>
+        <input asp-for="Breed" type="text" class="form-control" required />
+        <span asp-validation-for="Breed"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="Sex"></label>
+        <input asp-for="Sex" type="text" class="form-control" required/>
+        <span asp-validation-for="Sex"></span><br /><br />
+    </div>
+        
+    <div>
+        <label asp-for="DateOfBirth"></label>
+        <input asp-for="DateOfBirth" type="date" value="@Model.DateOfBirth.ToShortDateString()" class="form-control" required />
+        <span asp-validation-for="DateOfBirth"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="SpayedOrNeutered">Is your dog spayed/neutered?</label>
+        <input asp-for="SpayedOrNeutered" class="form-check-input" value="true" type="radio" class="form-control" />
+        <label class="form-check-label">Yes</label>
+        <input asp-for="SpayedOrNeutered" class="form-check-input" value="false" type="radio">
+        <label class="form-check-label">No</label>
+        <span asp-validation-for="SpayedOrNeutered"></span><br />
+    </div>
+
+    <div>
+        <label asp-for="Vaccinated">Are your dog's vaccinations up-to-date?</label>
+        <input asp-for="Vaccinated" class="form-check-input" value="true" type="radio" class="form-control" />
+        <label class="form-check-label">Yes</label>
+        <input asp-for="Vaccinated" class="form-check-input" value="false" type="radio">
+        <label class="form-check-label">No</label>
+        <span asp-validation-for="Vaccinated"></span><br /><br />
+    </div>
+
+    <div>
+        <label asp-for="SpecialAccommodation">Is your dog in need of a special accommodation?</label>
+        <input asp-for="SpecialAccommodation" class="form-check-input" value="true" type="radio" class="form-control" />
+        <label class="form-check-label">Yes</label>
+        <input asp-for="SpecialAccommodation" class="form-check-input" value="false" type="radio">
+        <label class="form-check-label">No</label><br />
+        <span asp-validation-for="SpecialAccommodation"></span><br /><br />
+    </div>
+
+    <button type="submit">Complete Reservation</button><br />
+</form>
