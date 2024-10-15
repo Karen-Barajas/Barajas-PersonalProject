@@ -16,6 +16,6 @@ namespace TheMaxieInn.Models
         public DateTime CheckOutDate { get; set; }
 
         public DogOwner DogOwner { get; set; }
-        public DogInformation DogInformation { get; set; }
+        public DogInformation DogInformation { get; set; }  
     }
 }

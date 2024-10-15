@@ -6,7 +6,10 @@
 
 <h3 class="text-center">Reservation Confirmed!</h3>
 
-<p class="text-center">Thank you @Model.OwnerName for booking your reservation for @Model.DogName from @Model.CheckInDate to @Model.CheckOutDate .</p>
+<p class="text-center">Thank you <b>@Model.OwnerName</b> for booking your reservation for <b>@Model.DogName from @Model.CheckInDate.ToShortDateString()</b> to <b>@Model.CheckOutDate.ToShortDateString()</b>.</p>
 <br />
 
-<p class="text-center">We are looking forward to @Model.DogName's stay!</p>
+<p class="text-center">We are looking forward to <b>@Model.DogName's stay!</b></p>
+<br />
+
+<a asp-action="CreateReservation" asp-controller="Reservation">Make A New Reservation</a>

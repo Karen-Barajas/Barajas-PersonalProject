@@ -13,15 +13,42 @@
 
     <div>
         <label asp-for="CheckInDate"></label>
-        <input asp-for="CheckInDate" type="date" class="form-control" value="@Model.CheckInDate.ToString("yyyy-MM-dd")" required />
+        <input asp-for="CheckInDate" type="date"  id="CheckInDate" class="form-control" required />
         <span asp-validation-for="CheckInDate" class="text-danger"></span>
     </div>
     <div>
         <label asp-for="CheckOutDate"></label>
-        <input asp-for="CheckOutDate" type="date" value="@Model.CheckOutDate.ToString("yyyy-MM-dd")" class="form-control" />
+        <input asp-for="CheckOutDate" type="date" id="CheckOutDate" class="form-control" />
         <span asp-validation-for="CheckOutDate" class="text-danger"></span>
+    </div><br />
+
+    <div>
+        <label>Total Reservation Cost: </label>
+        <span id="totalCalculatedCost"><b>$0.00</b></span>
     </div><br />
 
     <button type="submit">Next</button>
 
 </form>
+
+@section Scripts {
+    <script>
+        function updateTotalCost() {
+            const checkInDateValue = document.getElementById("CheckInDate").value;
+            const checkOutDateValue = document.getElementById("CheckOutDate").value;        
+
+        const checkInDate = new Date(checkInDateValue);
+        const checkOutDate = new Date(checkOutDateValue);
+        const pricePerNight = 40;
+
+        const totalDays = Math.max(0, (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24));
+        const totalCost = totalDays * pricePerNight;
+
+        document.getElementById("totalCalculatedCost").innerHTML = `<b>$${totalCost.toFixed(2)}</b>`;
+     }
+
+    document.getElementById("CheckInDate").addEventListener("change", updateTotalCost);
+    document.getElementById("CheckOutDate").addEventListener("change", updateTotalCost);
+        
+    </script>
+}

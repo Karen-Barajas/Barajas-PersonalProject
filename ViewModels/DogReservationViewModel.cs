@@ -14,5 +14,16 @@ namespace TheMaxieInn.ViewModels
         [Display(Name = "Check Out Date")]
         [DataType(DataType.Date)]
         public DateTime CheckOutDate { get; set; }
+        public int CalculateTotalCost()
+        {
+            const int PricePerNight = 40;
+            int totalCost = (CheckOutDate-CheckInDate).Days * PricePerNight;
+            return totalCost;
+        }
+        public DogReservationViewModel()
+        {
+            CheckInDate = DateTime.Now.Date;
+            CheckOutDate = CheckInDate.AddDays(1);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.Eventing.Reader;
 using System.Resources;
@@ -33,6 +34,8 @@ namespace TheMaxieInn.Controllers
         {
             if (ModelState.IsValid) 
             {
+                int totalCost = reservationViewModel.CalculateTotalCost();
+
                 var reservation = new DogReservation
                 {
                     CheckInDate = reservationViewModel.CheckInDate,

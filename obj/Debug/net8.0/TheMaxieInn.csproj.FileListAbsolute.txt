@@ -140,3 +140,4 @@ C:\Users\karen\source\repos\SD 725-Software Design\TheMaxieInn\obj\Debug\net8.0\
 C:\Users\karen\source\repos\SD 725-Software Design\TheMaxieInn\obj\Debug\net8.0\TheMaxieInn.pdb
 C:\Users\karen\source\repos\SD 725-Software Design\TheMaxieInn\obj\Debug\net8.0\TheMaxieInn.genruntimeconfig.cache
 C:\Users\karen\source\repos\SD 725-Software Design\TheMaxieInn\obj\Debug\net8.0\ref\TheMaxieInn.dll
+C:\Users\karen\source\repos\SD 725-Software Design\TheMaxieInn\obj\Debug\net8.0\TheMaxieInn.sourcelink.json
