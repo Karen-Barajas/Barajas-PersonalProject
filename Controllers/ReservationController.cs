@@ -135,12 +135,24 @@ namespace TheMaxieInn.Controllers
 
                 DogOwner = new DogOwnerViewModel
                 {
-                    OwnerName = owner.OwnerName
+                    OwnerName = owner.OwnerName,
+                    Address = owner.Address,
+                    City = owner.City,
+                    State = owner.State,
+                    ZipCode = owner.ZipCode,
+                    Email = owner.Email,
+                    PhoneNumber = owner.PhoneNumber
                 },
 
                 DogInformation = new DogInformationViewModel
                 {
-                    DogName = dog.DogName
+                    DogName = dog.DogName,
+                    Breed = dog.Breed,
+                    Sex = dog.Sex,
+                    DateOfBirth = dog.DateOfBirth,
+                    SpayedOrNeutered = dog.SpayedOrNeutered,
+                    Vaccinated = dog.Vaccinated,
+                    SpecialAccommodation = dog.SpecialAccommodation
                 }
             };
 

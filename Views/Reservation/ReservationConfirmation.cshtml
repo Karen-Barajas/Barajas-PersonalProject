@@ -4,9 +4,26 @@
     ViewData["Title"] = "Reservation Confirmation";
 }
 
-<h2 class="text-center text-white fw-bold">Reservation Confirmed!</h2>
+<h2 class="text-center text-white fw-bold"><u>Reservation Confirmed!</u></h2>
 
 <p class="text-center text-white">Thank you <u><b>@Model.DogOwner.OwnerName</b></u> for booking your reservation for <u><b>@Model.DogInformation.DogName</b></u> from <u><b>@Model.DogReservation.CheckInDate.ToShortDateString()</b></u> to <u><b>@Model.DogReservation.CheckOutDate.ToShortDateString()</b></u>.</p>
 <br />
 
 <p class="text-center text-white">We are looking forward to <u><b>@Model.DogInformation.DogName's</b></u> stay!</p>
+
+<h4 class="text-center text-white fw-bold"><u>Below are the remaining details of your reservation:</u></h4>
+<p class="text-center text-white">
+    <u>Address:</u> @Model.DogOwner.Address<br />
+    <u>City:</u> @Model.DogOwner.City<br />
+    <u>State:</u> @Model.DogOwner.State<br />
+    <u>Zip Code:</u> @Model.DogOwner.ZipCode<br />
+    <u>Email:</u> @Model.DogOwner.Email<br />
+    <u>Phone Number:</u> @Model.DogOwner.PhoneNumber<br /><br />
+
+    <u>Dog's Breed:</u> @Model.DogInformation.Breed<br />
+    <u>Dog's Sex:</u> @Model.DogInformation.Sex<br />
+    <u>Dog's Date of Birth:</u> @Model.DogInformation.DateOfBirth.ToShortDateString()<br />
+    <u>Is your dog spayed/neutered:</u> @(Model.DogInformation.SpayedOrNeutered ? "Yes" : "No")<br />
+    <u>Are your dog's vaccinations up-to-date:</u> @(Model.DogInformation.Vaccinated ? "Yes" : "No")<br />
+    <u>Will your dog require a special accommodation:</u> @(Model.DogInformation.SpecialAccommodation ? "Yes" : "No")<br />
+</p>

@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\karen\\source\\repos\\Prototype2\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|c:\\users\\karen\\source\\repos\\prototype2\\views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|solutionrelative:views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReservationConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\ReservationConfirmation.cshtml",
-              "RelativeDocumentMoniker": "Views\\Reservation\\ReservationConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\ReservationConfirmation.cshtml",
-              "RelativeToolTip": "Views\\Reservation\\ReservationConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T02:20:53.506Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
