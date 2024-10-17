@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.Eventing.Reader;
 using System.Resources;
+using System.Runtime.Intrinsics.Arm;
 using TheMaxieInn.Data;
 using TheMaxieInn.Models;
 using TheMaxieInn.ViewModels;
@@ -30,9 +31,9 @@ namespace TheMaxieInn.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateReservation(DogReservationViewModel reservationViewModel) 
+        public IActionResult CreateReservation(DogReservationViewModel reservationViewModel)
         {
-            if (ModelState.IsValid) 
+            if (ModelState.IsValid)
             {
                 int totalCost = reservationViewModel.CalculateTotalCost();
 
@@ -45,7 +46,7 @@ namespace TheMaxieInn.Controllers
                 _context.DogReservation.Add(reservation);
                 _context.SaveChanges();
 
-                return RedirectToAction("AddDogOwner", new { reservationId = reservation.ReservationId});
+                return RedirectToAction("AddDogOwner", new { reservationId = reservation.ReservationId });
             }
             return View(reservationViewModel);
         }
@@ -84,7 +85,7 @@ namespace TheMaxieInn.Controllers
         }
 
         [HttpGet]
-        public IActionResult AddDogInformation(int reservationId) 
+        public IActionResult AddDogInformation(int reservationId)
         {
             ViewBag.ReservationId = reservationId;
             return View(new DogInformationViewModel());
@@ -110,7 +111,7 @@ namespace TheMaxieInn.Controllers
                 _context.DogInformation.Add(dogInfo);
                 _context.SaveChanges();
 
-                return RedirectToAction("ReservationConfirmation", new { reservationId});
+                return RedirectToAction("ReservationConfirmation", new { reservationId });
             }
 
             ViewBag.ReservationId = reservationId;
@@ -126,14 +127,24 @@ namespace TheMaxieInn.Controllers
 
             var confirmationViewModel = new ReservationConfirmationViewModel
             {
-                OwnerName = owner.OwnerName,
-                DogName = dog.DogName,
-                CheckInDate = reservation.CheckInDate,
-                CheckOutDate = reservation.CheckOutDate
-            };                 
+                DogReservation = new DogReservationViewModel
+                {
+                    CheckInDate = reservation.CheckInDate,
+                    CheckOutDate = reservation.CheckOutDate
+                },
+
+                DogOwner = new DogOwnerViewModel
+                {
+                    OwnerName = owner.OwnerName
+                },
+
+                DogInformation = new DogInformationViewModel
+                {
+                    DogName = dog.DogName
+                }
+            };
 
             return View(confirmationViewModel);
         }
-
     }
-}
+}  

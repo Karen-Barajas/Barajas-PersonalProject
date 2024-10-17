@@ -2,9 +2,8 @@
 {
     public class ReservationConfirmationViewModel
     {
-        public string OwnerName { get; set; }
-        public string DogName { get; set; }
-        public DateTime CheckInDate { get; set; }
-        public DateTime CheckOutDate { get; set; }
+        public DogReservationViewModel DogReservation { get; set; }
+        public DogOwnerViewModel DogOwner { get; set; }
+        public DogInformationViewModel DogInformation { get; set; }
     }
 }

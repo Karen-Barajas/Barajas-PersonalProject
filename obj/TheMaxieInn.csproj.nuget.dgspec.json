@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karen\\source\\repos\\SD 725-Software Design\\TheMaxieInn\\TheMaxieInn.csproj": {}
+    "C:\\Users\\karen\\Source\\Repos\\Prototype2\\TheMaxieInn.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karen\\source\\repos\\SD 725-Software Design\\TheMaxieInn\\TheMaxieInn.csproj": {
+    "C:\\Users\\karen\\Source\\Repos\\Prototype2\\TheMaxieInn.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karen\\source\\repos\\SD 725-Software Design\\TheMaxieInn\\TheMaxieInn.csproj",
+        "projectUniqueName": "C:\\Users\\karen\\Source\\Repos\\Prototype2\\TheMaxieInn.csproj",
         "projectName": "TheMaxieInn",
-        "projectPath": "C:\\Users\\karen\\source\\repos\\SD 725-Software Design\\TheMaxieInn\\TheMaxieInn.csproj",
+        "projectPath": "C:\\Users\\karen\\Source\\Repos\\Prototype2\\TheMaxieInn.csproj",
         "packagesPath": "C:\\Users\\karen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karen\\source\\repos\\SD 725-Software Design\\TheMaxieInn\\obj\\",
+        "outputPath": "C:\\Users\\karen\\Source\\Repos\\Prototype2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

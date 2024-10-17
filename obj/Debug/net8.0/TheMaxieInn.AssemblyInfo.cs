@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheMaxieInn")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32a7295332a2e13c4d890c8cf08872bf3479ba15")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34d428603a015200c81074de7a6af0a9b76e457c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheMaxieInn")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheMaxieInn")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
