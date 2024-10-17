@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\karen\\source\\repos\\Prototype2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|c:\\users\\karen\\source\\repos\\prototype2\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|solutionrelative:controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|c:\\users\\karen\\source\\repos\\prototype2\\views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|solutionrelative:views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReservationController.cs",
-              "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Prototype2\\Controllers\\ReservationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReservationController.cs",
-              "ToolTip": "C:\\Users\\karen\\source\\repos\\Prototype2\\Controllers\\ReservationController.cs",
-              "RelativeToolTip": "Controllers\\ReservationController.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAAwJMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T23:46:15.399Z"
+              "Title": "ReservationConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\ReservationConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reservation\\ReservationConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\ReservationConfirmation.cshtml",
+              "RelativeToolTip": "Views\\Reservation\\ReservationConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T02:20:53.506Z",
+              "EditorCaption": ""
             }
           ]
         }

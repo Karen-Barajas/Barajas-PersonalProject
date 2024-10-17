@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karen\\Source\\Repos\\Prototype2\\TheMaxieInn.csproj": {}
+    "C:\\Users\\karen\\source\\repos\\Prototype2\\TheMaxieInn.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karen\\Source\\Repos\\Prototype2\\TheMaxieInn.csproj": {
+    "C:\\Users\\karen\\source\\repos\\Prototype2\\TheMaxieInn.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karen\\Source\\Repos\\Prototype2\\TheMaxieInn.csproj",
+        "projectUniqueName": "C:\\Users\\karen\\source\\repos\\Prototype2\\TheMaxieInn.csproj",
         "projectName": "TheMaxieInn",
-        "projectPath": "C:\\Users\\karen\\Source\\Repos\\Prototype2\\TheMaxieInn.csproj",
+        "projectPath": "C:\\Users\\karen\\source\\repos\\Prototype2\\TheMaxieInn.csproj",
         "packagesPath": "C:\\Users\\karen\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\karen\\Source\\Repos\\Prototype2\\obj\\",
         "projectStyle": "PackageReference",

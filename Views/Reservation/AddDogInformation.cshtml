@@ -5,62 +5,69 @@
     var reservationId = ViewBag.ReservationId;
 }
 
-<h3 class="text-center">Add your dog's information:</h3>
+<h3 class="text-center text-white fw-bold">Add your dog's information:</h3>
 
-
+<div class="row text-center">
 <form asp-action="AddDogInformation" method="post">    
     <input type="hidden" name="reservationId" value="@reservationId" />
 
-    <div>
+    <div class="row justify-content-center">
         <label asp-for="DogName"></label>
         <input asp-for="DogName" type="text" class="form-control" required />
         <span asp-validation-for="DogName"></span><br />
     </div>
 
-    <div>
+    <div class="row justify-content-center">
         <label asp-for="Breed"></label>
         <input asp-for="Breed" type="text" class="form-control" required />
         <span asp-validation-for="Breed"></span><br />
     </div>
 
-    <div>
+        <div class="row justify-content-center">
         <label asp-for="Sex"></label>
         <input asp-for="Sex" type="text" class="form-control" required/>
         <span asp-validation-for="Sex"></span><br /><br />
     </div>
-        
-    <div>
+
+        <div class="row justify-content-center">
         <label asp-for="DateOfBirth"></label>
         <input asp-for="DateOfBirth" type="date" value="@Model.DateOfBirth.ToShortDateString()" class="form-control" required />
         <span asp-validation-for="DateOfBirth"></span><br />
     </div>
 
-    <div>
+        <div class="row d- flex justify-content-center">
         <label asp-for="SpayedOrNeutered">Is your dog spayed/neutered?</label>
+        <div class="d-flex justify-content-center">
         <input asp-for="SpayedOrNeutered" class="form-check-input" value="true" type="radio" class="form-control" />
         <label class="form-check-label">Yes</label>
         <input asp-for="SpayedOrNeutered" class="form-check-input" value="false" type="radio">
         <label class="form-check-label">No</label>
         <span asp-validation-for="SpayedOrNeutered"></span><br />
+            </div>
     </div>
 
-    <div>
+        <div class="row justify-content-center">
         <label asp-for="Vaccinated">Are your dog's vaccinations up-to-date?</label>
+        <div class="d-flex justify-content-center">
         <input asp-for="Vaccinated" class="form-check-input" value="true" type="radio" class="form-control" />
         <label class="form-check-label">Yes</label>
         <input asp-for="Vaccinated" class="form-check-input" value="false" type="radio">
         <label class="form-check-label">No</label>
-        <span asp-validation-for="Vaccinated"></span><br /><br />
+        <span asp-validation-for="Vaccinated"></span><br />
+            </div>
     </div>
 
-    <div>
+        <div class="row justify-content-center">
         <label asp-for="SpecialAccommodation">Is your dog in need of a special accommodation?</label>
+        <div class="d-flex justify-content-center">
         <input asp-for="SpecialAccommodation" class="form-check-input" value="true" type="radio" class="form-control" />
         <label class="form-check-label">Yes</label>
         <input asp-for="SpecialAccommodation" class="form-check-input" value="false" type="radio">
         <label class="form-check-label">No</label><br />
         <span asp-validation-for="SpecialAccommodation"></span><br /><br />
-    </div>    
+            </div>
+    </div>
 
-    <button type="submit">Complete Reservation</button><br />
+        <button type="submit" class="btn btn-light btn-outline-warning fw-bold">Complete Reservation</button><br />
 </form>
+</div>

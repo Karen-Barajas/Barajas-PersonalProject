@@ -4,10 +4,9 @@
     ViewData["Title"] = "Reservation Confirmation";
 }
 
-<h3 class="text-center">Reservation Confirmed!</h3>
+<h2 class="text-center text-white fw-bold">Reservation Confirmed!</h2>
 
-<p class="text-center">Thank you <b>@Model.DogOwner.OwnerName</b> for booking your reservation for <b>@Model.DogInformation.DogName from @Model.DogReservation.CheckInDate.ToShortDateString()</b> to <b>@Model.DogReservation.CheckOutDate.ToShortDateString()</b>.</p>
+<p class="text-center text-white">Thank you <u><b>@Model.DogOwner.OwnerName</b></u> for booking your reservation for <u><b>@Model.DogInformation.DogName</b></u> from <u><b>@Model.DogReservation.CheckInDate.ToShortDateString()</b></u> to <u><b>@Model.DogReservation.CheckOutDate.ToShortDateString()</b></u>.</p>
 <br />
 
-<p class="text-center">We are looking forward to <b>@Model.DogInformation.DogName's stay!</b></p>
-<br />
+<p class="text-center text-white">We are looking forward to <u><b>@Model.DogInformation.DogName's</b></u> stay!</p>

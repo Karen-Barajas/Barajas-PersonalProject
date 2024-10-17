@@ -1,22 +1,275 @@
 html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 body {
-  margin-bottom: 60px;
+    background-color: peru;
+    display: flex;
+    flex-direction: column;
+    font-family: Garamond;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar {
+    background-color: saddlebrown;
+    text-align: center;
+}
+
+.navbar-toggler {
+    background-color: peru;
+}
+
+.nav-link {
+    color: ghostwhite;
+    font-family: Garamond;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.navbar-brand {
+    color: ghostwhite;
+    font-family: Garamond;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+.navbar a:hover {
+    background-color: peru;
+    color: ghostwhite;
+    padding: 3px 3px;
+}
+
+#logo {
+    width: 4em;
+    height: 4em;
+}
+
+.p-aboutus {
+    padding: 0.25em 3em;
+}
+
+.h-aboutus {
+    padding-left: 1em;
+}
+
+footer {
+    background-color: saddlebrown;
+    padding: 20px;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+#map {
+    margin-top: 15px;
+    width: 20em;
+    height: 20em;
+}
+
+#doginn {
+    margin-top: 15px;
+    width: 22em;
+    height: 20em;
+}
+
+button, input, select, textarea, legend, label {
+    font-family: Garamond;
+    font-size: 100%;
+}
+
+label, legend {
+    color: ghostwhite;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+input[type="text"], textarea {
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: 3px;
+    margin: 3px;
+    background-color: sandybrown;
+    color: ghostwhite;
+    font-weight: bold;
+}
+
+textarea {
+    width: 60%;
+    padding: 3px;
+    background-color: sandybrown;
+    color: ghostwhite;
+    font-weight: bold;
+    border: double black;
+    font-size: 16px;
+}
+
+label[for=emailaddress], label[for=phonecall] {
+    font-size: 18px;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+    input[type="checkbox"] + label {
+        border: 4px double saddlebrown;
+        background-color: sandybrown;
+        padding: 3px 4px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: inline;
+    }
+
+    input[type="checkbox"]:checked + label {
+        border-color: rosybrown;
+        background-color: brown;
+    }
+
+button {
+    border: 4px double saddlebrown;
+    background-color: sandybrown;
+    color: ghostwhite;
+    font-weight: bold;
+}
+
+    button:hover {
+        border-color: saddlebrown;
+        background-color: peru;
+    }
+
+fieldset {
+    display: inline;
+}
+
+.callout {
+    background-color: saddlebrown;
+    border: dashed;
+    border-color: navajowhite;
+    max-width: 30em;
+    margin: auto;
+}
+
+#dogSuitcase {
+    width: 20em;
+    height: 15em;
+}
+
+#dayCare {
+    width: 20em;
+    height: 15em;
+}
+
+#dogGrooming {
+    width: 20em;
+    height: 15em;
+}
+
+#dogTraining {
+    width: 20em;
+    height: 15em;
+}
+
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: saddlebrown;
+}
+
+td {
+    padding: 10px;
+    color: ghostwhite;
+    font-family: Garamond;
+    font-weight: bolder;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.form-control {
+    text-align: center;
+    background-color: sandybrown;
+    color: white;
+    font-weight: bold;
+    max-width: 20em;
+    width: 100%;
+}
+
+    .form-control:focus {
+        background-color: sandybrown;
+        color: white;
+    }
+
+@media (min-width:601px) {
+    label {
+        width: 10%;
+    }
+
+    input[type="text"] {
+        width: 25%;
+    }
+
+    textarea {
+        width: 40%;
+    }
+
+    label[for=feedback] {
+        width: 30%;
+    }
+
+    .custom-margin {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:770px) {
+    #max {
+        width: 15em;
+        height: 15em;
+    }
+
+    label {
+        width: 30%;
+    }
+
+    input[type="text"] {
+        width: 45%;
+    }
+
+
+    label[for=feedback] {
+        width: 65%;
+    }
+
+    td {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+
+    .custom-margin {
+        margin: 0;
+    }
+
+    #map {
+        margin-bottom: 10px;
+    }
+
+    #doginn {
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 70%;
+        margin-top: 5px;
+    }
 }

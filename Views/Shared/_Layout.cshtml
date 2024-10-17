@@ -3,27 +3,44 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TheMaxieInn</title>
+    <title>@ViewData["Title"] - The Maxie Inn</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TheMaxieInn.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TheMaxieInn</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="https://as2.ftcdn.net/v2/jpg/01/03/26/21/1000_F_103262101_z75t5UbLxFn88T9hDp62zYC5BWd9x7Zn.jpg" alt="Logo" width="70" height="70" class="rounded d-inline-block align-text-top">
+                </a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    The Maxie Inn
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link custom-margin" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-margin" asp-area="" asp-controller="Home" asp-action="Location">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Reservation" asp-action="CreateReservation">Make A Reservation</a>
                         </li>
                     </ul>
                 </div>
@@ -36,9 +53,10 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - TheMaxieInn - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer fw-bold text-center">
+        <div class="container" style="color:ghostwhite; font-family:Garamond">
+            <img src="https://as2.ftcdn.net/v2/jpg/02/75/19/67/1000_F_275196731_aFVN6R7M2CipYdQXyUAMUMtqMuQ5IoJi.jpg" class="rounded mx-auto d-block" id="logo" alt="dog with tongue out" width="70" height="70" />
+            &copy; 2024 - TheMaxieInn
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -4,32 +4,37 @@
     ViewData["Title"] = "Create a Reservation";
 }
 
-<h3 class="text-center">Make Your Reservation Today!</h3>
+<h3 class="text-center text-white fw-bold">Make Your Reservation Today!</h3>
 <br />
 
-<h5>Select your reservation dates:</h5>
+<h5 class="text-center text-white fw-bold">Select your reservation dates:</h5>
 
+<div class="row">
+    <div class="text-center">
 <form asp-action="CreateReservation" method="post">
 
-    <div>
+    <div class="row justify-content-center">
         <label asp-for="CheckInDate"></label>
         <input asp-for="CheckInDate" type="date"  id="CheckInDate" class="form-control" required />
         <span asp-validation-for="CheckInDate" class="text-danger"></span>
     </div>
-    <div>
+    <hr />
+    <div class="row justify-content-center">
         <label asp-for="CheckOutDate"></label>
         <input asp-for="CheckOutDate" type="date" id="CheckOutDate" class="form-control" />
         <span asp-validation-for="CheckOutDate" class="text-danger"></span>
-    </div><br />
-
-    <div>
+    </div>
+    <hr />
+    <div class="row justify-content-center text-white">
         <label>Total Reservation Cost: </label>
-        <span id="totalCalculatedCost"><b>$0.00</b></span>
+                <span id="totalCalculatedCost"><u><b>$0.00</b></u></span>
     </div><br />
 
-    <button type="submit">Next</button>
+    <button type="submit" class="btn btn-light btn-outline-warning fw-bold">Next</button>
 
 </form>
+    </div>
+</div>
 
 @section Scripts {
     <script>

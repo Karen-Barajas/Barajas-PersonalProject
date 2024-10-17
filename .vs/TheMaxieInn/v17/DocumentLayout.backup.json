@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\karen\\source\\repos\\Prototype2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|c:\\users\\karen\\source\\repos\\prototype2\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|solutionrelative:controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|c:\\users\\karen\\source\\repos\\prototype2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|c:\\users\\karen\\source\\repos\\prototype2\\views\\reservation\\adddoginformation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|solutionrelative:views\\reservation\\adddoginformation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|c:\\users\\karen\\source\\repos\\prototype2\\views\\reservation\\createreservation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|solutionrelative:views\\reservation\\createreservation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|c:\\users\\karen\\source\\repos\\prototype2\\views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93394230-D20D-4522-A3B2-BFD56EC76EA0}|TheMaxieInn.csproj|solutionrelative:views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddDogInformation.cshtml",
+              "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\AddDogInformation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reservation\\AddDogInformation.cshtml",
+              "ToolTip": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\AddDogInformation.cshtml",
+              "RelativeToolTip": "Views\\Reservation\\AddDogInformation.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T02:31:43.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateReservation.cshtml",
+              "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\CreateReservation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reservation\\CreateReservation.cshtml",
+              "ToolTip": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\CreateReservation.cshtml",
+              "RelativeToolTip": "Views\\Reservation\\CreateReservation.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T02:25:03.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReservationController.cs",
-              "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Prototype2\\Controllers\\ReservationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReservationController.cs",
-              "ToolTip": "C:\\Users\\karen\\source\\repos\\Prototype2\\Controllers\\ReservationController.cs",
-              "RelativeToolTip": "Controllers\\ReservationController.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAAwJMAAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Prototype2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\karen\\source\\repos\\Prototype2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T23:46:15.399Z",
+              "WhenOpened": "2024-10-17T01:52:33.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReservationConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\ReservationConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reservation\\ReservationConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\karen\\source\\repos\\Prototype2\\Views\\Reservation\\ReservationConfirmation.cshtml",
+              "RelativeToolTip": "Views\\Reservation\\ReservationConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T02:20:53.506Z",
               "EditorCaption": ""
             }
           ]
